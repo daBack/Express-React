@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee|Noto+Sans');
+@black: #130c03;
+@white: #f6f1f1;
+@contrast: #D66E1B;
+@standardFont: 'Noto Sans', sans-serif;
+@curlyFont: 'Handlee', cursive;
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: @white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: center;
+    background-color: @black;
+    a {
+        // margin: auto;
+        font-family: @standardFont;
+        color: @white;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin: auto 0;
+        display: flex;
+        padding: 30px;
+    }
+}
+
+.topBox {
+    display: flex;
+    justify-content: center;
+    background: url(../img/asd.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center bottom;
+    box-shadow: inset  0  8px 8px -10px #2e2424, inset  0 -10px 8px -8px #2e2424;
+    h1 {
+        font-family: @curlyFont;
+        text-transform: uppercase;
+        font-size: 8em;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000;
+        color: #e6ecec;
+    }
+}
