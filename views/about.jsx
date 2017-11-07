@@ -19,7 +19,7 @@ class About extends React.Component {
                               <br/><br/>
                               <a href="https://github.com/daBack/Express-React">Github repo</a>
                               <br/><br/>
-                              Oh, one last thing.. I love flexbox.
+                              Oh, one last thing.. I just love flexbox.
                           </article>
                       </div>
                       <div class='rightDiv'>
