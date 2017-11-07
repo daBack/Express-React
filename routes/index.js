@@ -7,7 +7,7 @@
 // };
 
 exports.index = (req, res) => {
-    res.render('index', {title: 'Home'});
+    res.render('index', {title: 'Oscar Bäck'});
 };
 
 exports.about = (req, res) => {
