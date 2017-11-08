@@ -15,5 +15,5 @@ exports.about = (req, res) => {
 };
 
 exports.report = (req, res) => {
-    res.render('report', {title: 'About'});
+    res.render('report', {title: 'Reports'});
 };
