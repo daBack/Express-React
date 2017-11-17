@@ -1,0 +1,33 @@
+version: "3"
+services:
+    node90:
+        image: "node:9.0.0"
+        user: "node"
+        ports:
+            - "8071:3000"
+        working_dir: /home/node/app
+        environment:
+            - NODE_ENV=production
+        volumes:
+            - ./:/home/node/app/
+        command: "npm start"
+    node80:
+        image: node:8.0.0
+        ports:
+            - "8070:3000"
+        working_dir: /home/node/app
+        environment:
+            - NODE_ENV=production
+        volumes:
+            - ./:/home/node/app/
+        command: "npm start"
+    node70:
+        image: node:7.0.0
+        ports:
+            - "8056:3000"
+        working_dir: /home/node/app
+        environment:
+            - NODE_ENV=production
+        volumes:
+            - ./:/home/node/app/
+        command: "npm start"
