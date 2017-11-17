@@ -33,7 +33,19 @@ class Report extends React.Component {
                       </div>
                       <div class='kmom'>
                           <h4>Kmom02</h4>
-                          <article></article>
+                          <article>
+                            <b>Har du jobbat med Docker eller andra virtualiseringstekniker innan?</b><br></br>
+                            Innan detta kursmoment har jag inte använt eller hört talas om Docker. Det verkar vara ett bra verktyg för att enkelt testa olika miljöer och versioner. Tidigare har jag använt mig utav virtualbox vilket är mycket mer komplex då du själv måste sätta upp hela operativsystemet. Docker behövde bara en rad för att starta allt. Snabbt stabilt och jätte jättebra.
+                            <br></br><br></br>
+                            <b>Hur ser du på möjligheterna att använda dig av Docker för att jobba med tester av ditt repo?</b><br></br>
+                            Jag tycker det är en bra metod. Då kan jag till exempel skriva väldigt ny javascript kod och sedan se om den är bakåtkompatibel. Det känns som ett sätt att ytterligare säkra sin sida mot buggar och fel.
+                            <br></br><br></br>
+                            <b>Gick allt smidigt eller stötte du på problem?</b><br></br>
+                            Det gick helt okej tills jag skulle skapa min egna docker-compose.yml fil. Jag letade efter hur jag skulle skriva det för node, men inget framgång. Jag testade med några olika rader som jag la till och tog bort men det löste sig inte. Tillslut fick jag hjälp utav Magnus som gav mig tips. Utöver det gick det bra och jag kände att jag fick en grundläggande kunskap kring Docker.
+                            <br></br><br></br>
+                            <b>Skapade du din egen image, berätta om den?</b><br></br>
+                            Jag skapade ingen egen image då jag inte kände behov för det nu. Jag ser möjligheterna med det så jag tror att det kan hända längre fram i min kodkarriär.
+                        </article>
                       </div>
                       <div class='kmom'>
                           <h4>Kmom03</h4>
