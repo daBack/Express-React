@@ -127,9 +127,35 @@ test: htmlhint stylelint eslint jsunittest
 
 
 
+# target: node_7                - Test node code version X.
+.PHONY: test1
+test1:
+	@$(call HELPTEXT,$@)
+	docker-compose run node_7 npm test
+
+
+
+
+# target: node_6                - Test node code version X.
+.PHONY: test2
+test2:
+	@$(call HELPTEXT,$@)
+	docker-compose run node_6 npm test
+
+
+
+# target: node_5               - Test node code version X.
+.PHONY: test3
+test3:
+	@$(call HELPTEXT,$@)
+	docker-compose run node_5 npm test
+
+
+
+
 # target: doc                - Generate documentation.
 .PHONY: doc
-doc: 
+doc:
 	@$(call HELPTEXT,$@)
 
 
@@ -259,7 +285,7 @@ ifneq ($(wildcard .nycrc),)
 	[ ! -d test ] || $(NYC) $(MOCHA) --reporter dot 'test/**/*.js'
 else
 	[ ! -d test ] || $(MOCHA) --reporter dot 'test/**/*.js'
-endif 
+endif
 
 
 
