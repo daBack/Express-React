@@ -4,10 +4,11 @@
         "html"
     ],
     "include": [
-      "src/**/*.js"
+      "**/*.js"
     ],
     "exclude": [
-      "coverage/"
+      "coverage/",
+      "./node_modules/nyc/lib/config-util.js"
     ],
     "all": true,
     "report-dir": "./build/coverage",
