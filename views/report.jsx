@@ -49,7 +49,29 @@ class Report extends React.Component {
                       </div>
                       <div class='kmom'>
                           <h4>Kmom03</h4>
-                          <article></article>
+                          <article>
+                                <b>Berätta vilka tekniker/verktyg du valde för enhetstester och kodtäckning och varför?</b><br></br>
+                                Jag valde de verktyg som introducerades i övningen, mocha och nyc. Eftersom det var bra dokumenterat om hur det fungerade så kände jag att det dög för min kod. För kodtäckningen så använde jag alla de tjänster som fanns i övningen också. Jag var osäker på vilka jag faktiskt skulle använda i framtiden så därför implementerade jag så många som möjligt. Det blev:
+                                Codeship, Bettercodehub, code coverage, circleCi, Scrutinizer, TravisCi och codeclimate.
+                                <br></br><br></br>
+                                <b>Berätta om cin CI-kedja och reflektera över de valen du gjorde?</b><br></br>
+                                Jag känner att jag förstod begreppet och fördelarna men jag var osäker på hur jag skulle integrera det helt. Jag tror att jag lyckats relativt så att det funkar både för make test och npm test. Jag är osäker på om jag riktigt kopplade det rätt till Travis men är nöjd med hur det blev.
+                                <br></br><br></br>
+                                <b>Reflektera över hur det gick att integrera enhetstesterna i olika Docker-kontainerns och om du ser någon nytta med detta.</b>
+                                <br></br>
+                                Jag tycker att docker verkar som ett bra verktyg, jobbigt men otroligt smart. Jag hade problem när jag skulle sätta upp min docker-compose fil då jag inte hittade någon fil för hur den skulle skrivas.
+                                Jag hade velat ha lite mer info om hur den skrivs (speciellt för node). Det kan vara så att jag inte hittat det än bara. Jag tror att om man jobbar på ett stort företag där en stor app ska ut, så är docker otroligt bra, men om det bara är små hobby projekt så hade jag inte velat lägga så mycket tyngd på test för olika versioner.
+                                <br></br><br></br>
+                                <b>Hur väl lyckades du utvärdera TDD-konceptet och vilka är dina reflektioner?</b><br></br>
+                                Hell no. Nej men jag känner att det inte är mitt sätt att jobba på. Visst är det viktigt med testning men aldrig till den grad så att du skriver testerna först och skriver din kod anpassad till dem. (:
+                                <br></br><br></br>
+                                <b>Berätta om tankarna kring din klient/server applikation och nämn de tekniker du använder.</b><br></br>
+                                Jag har valt att skapa två express servrar, en för frontend med react och en för backend där jag kommer hantera mina funktioner och data etc. Just nu har jag bara några få funktioner där jag hämtar info från ett api. Dock så får jag inte den data jag vill från api:t så jag kommer troligtvis att ta bort det och använda mig av annan data om jag inte får svar från de som ger ut api:t.
+                                <br></br><br></br>
+                                Idén är att jag vill skapa en app till ett spel där den hämtar information från föregående match (player unknowns battleground) som sedan sparas och matchas med de spelare du har lagt till på sidan. Den spelaren som har högst poäng vinner.
+
+
+                          </article>
                       </div>
                       <div class='kmom'>
                           <h4>Kmom04</h4>
