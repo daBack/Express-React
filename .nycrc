@@ -4,11 +4,12 @@
         "html"
     ],
     "include": [
-      "**/*.js"
+      "**/*.js",
+      "test/**/*.js"
     ],
     "exclude": [
       "coverage/",
-      "**/node_modules/**"
+      "node_modules/**"
     ],
     "all": true,
     "report-dir": "./build/coverage",
