@@ -8,7 +8,7 @@
     ],
     "exclude": [
       "coverage/",
-      "./node_modules/nyc/lib/config-util.js"
+      "**/node_modules/**"
     ],
     "all": true,
     "report-dir": "./build/coverage",
