@@ -17,3 +17,7 @@ exports.about = (req, res) => {
 exports.report = (req, res) => {
     res.render('report', {title: 'Reports'});
 };
+
+exports.chat = (req, res) => {
+    res.render('chat', {title: 'Chat'});
+};

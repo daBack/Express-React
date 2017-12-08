@@ -12,6 +12,7 @@ class Layout extends React.Component {
           <title>{this.props.title}</title>
           <link rel="stylesheet" href="/../css/style.css" />
           <link href="./../stylesheets/hover.css" rel="stylesheet"/>
+          <link rel="stylesheet" href="./../stylesheets/client.css"/>
           <script
               src="https://use.fontawesome.com/6dc446f9b9.js"
             dangerouslySetInnerHTML={{
