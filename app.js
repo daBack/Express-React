@@ -78,29 +78,6 @@ function broadcastExcept(ws, data) {
 
 
 
-/**
- * Select subprotocol to use for connection.
- *
- * @param {Array} protocols              Subprotocols to choose from, sent
- *                                        by client request.
- * @param {http.IncomingMessage} request The client HTTP GET request.
- *
- * @return {void}
- */
-function handleProtocols(protocols /*, request */) {
-    console.log(`Incoming protocol requests '${protocols}'.`);
-    for (var i=0; i < protocols.length; i++) {
-        if (protocols[i] === "text") {
-            return "text";
-        } else if (protocols[i] === "json") {
-            return "json";
-        }
-    }
-    return false;
-}
-
-
-
 // Setup for websocket requests.
 // Docs: https://github.com/websockets/ws/blob/master/doc/ws.md
 wss.on("connection", (ws/*, req*/) => {
