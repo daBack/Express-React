@@ -10,3 +10,10 @@ Made by daBack (Bäck)
 [![CircleCI](https://circleci.com/gh/daBack/Express-React.svg?style=svg)](https://circleci.com/gh/daBack/Express-React)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/daBack/Express-React/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/daBack/Express-React/?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0dbababd940742fe0bb6/maintainability)](https://codeclimate.com/github/daBack/Express-React/maintainability)
+
+##Installation:
+To install this app, download it via github or commandline: `git clone https://github.com/daBack/Express-React.git`.
+
+When done, you need to to the command `npm install` to make sure all node_modules are loaded.
+
+To start the server, do `npm start`

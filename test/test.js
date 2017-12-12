@@ -1,7 +1,7 @@
 "use strict";
 
 var assert = require('assert');
-let client = require('../public/js/client.js');
+// let client = require('../public/js/client.js');
 
 describe('Testing Express and Jsx', function() {
     describe('simple test', function() {
