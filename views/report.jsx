@@ -94,7 +94,8 @@ class Report extends React.Component {
                               <b>Berätta om den realtidsfunktionalitet du väljer att integrera i din klient/server applikation.</b><br></br>
                               Jag kommer troligtvis inte använda det som en chatt, utan mer som en inforuta. Min tanke är att "spelarna" på sidan ska skicka in data till server, som efter funktioner, skickar tillbaka data om
                               vem som har vunnit. Då tänkte jag att jag använder server till att skicka ut dessa meddelande via websocket. Det kommer kanske finnas en chat, men det viktigaste är att vem som har vunnit etc
-                              visas direkt.
+                              visas direkt. Jag har än inte skrivit någon kod från förra kursmomentet utan bara fokuserat på hur datan ska hanteras och skapat själva vyerna så jag enkelt kan hantera det. Jag gjorde bland annat en
+                              mindmap på mindmeister som hjälp.
                           </article>
                       </div>
                       <div class='kmom'>
