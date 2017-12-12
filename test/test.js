@@ -1,6 +1,7 @@
 "use strict";
 
 var assert = require('assert');
+let client = require('../public/js/client.js');
 
 describe('Testing Express and Jsx', function() {
     describe('simple test', function() {
@@ -11,3 +12,16 @@ describe('Testing Express and Jsx', function() {
         });
     });
 });
+
+
+//
+// describe('testing Client file', function() {
+//     it('testing outputlog format', function() {
+//         let now = new Date();
+//         let timestampTest = now.toLocaleTimeString();
+//         let message = "Hallo";
+//         let output = `${timestampTest} ${message}<br>`;
+//
+//         assert.equal(client.outputLog("Hallo"), output);
+//     });
+// });

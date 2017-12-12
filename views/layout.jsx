@@ -13,7 +13,7 @@ class Layout extends React.Component {
           <link rel="stylesheet" href="/../css/style.css" />
           <link href="./../stylesheets/hover.css" rel="stylesheet"/>
           <link rel="stylesheet" href="./../stylesheets/client.css"/>
-          <link rel="icon" href="./../img/standardIco.ico"/>
+          <link rel="icon" href="./../img/standardIco.png"/>
           <script
               src="https://use.fontawesome.com/6dc446f9b9.js"
             dangerouslySetInnerHTML={{

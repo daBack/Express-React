@@ -75,7 +75,27 @@ class Report extends React.Component {
                       </div>
                       <div class='kmom'>
                           <h4>Kmom04</h4>
-                          <article></article>
+                          <article><b>Är du ny på realtidsprogrammering eller har du gjort liknande tidigare?</b><br></br>
+                              Jag har tidigare aldrig jobbat med realtid. Inte heller något som kommer nära. Det är otroligt coolt att man på ett enkelt sett kan inkludera en chatt på ens egen sida.
+                              Nu i början så såg jag bara hur det kunde komma att användas i en chat, men när jag blir mer bekväm med det så tror jag att jag kan inkludera websockets
+                              på andra sätt.
+                              <br></br><br></br>
+                              <b>Hur gick det att jobba med konceptet realtidsprogrammering i webben, några reflektioner?</b><br></br>
+                              Det gick hyffsat. Jag löste lätt att inkludera övningen och gå igenom den. Problemet kom sen när jag skulle byta ut det till json. Just nu kan man skicka via både JSON och text men det får man ändra i vyn.
+                              Jag valde att göra så för att själva valmömöjligheten i sig inte är så behövande för användaren. Däremot har jag byggt upp så att subprotocol fungerar och att det går att skapa flera.
+                              Problemet kom sen när jag skulle byta till JSON, då jag var lite osäker på hur informationen skulle skickas. Tillslut märkte jag felet och det var fel på hur jag hade parsat mitt JSON meddelande.
+                              <br></br><br></br>
+                              <b>Berätta om din chatt som du integrerade i redovisa-sidan.</b><br></br>
+                              På redovisningssidan är det en vanlig chat som fungerar, punkt. Den har ej meddelande för när en enhet ansluter eller lämnar vilket jag lämnade öppet efter lite försök.
+                              Däremot så fungerar allt det som ska, man kan använda Nickname och ansluta med JSON.
+                              Jag försökte mig på att skriva ett par enhetstester för min client fil, men stötte på patrull. När jag skapat ett test, så får jag att documentet inte är definerat. Troligtvis är det fel
+                              i min syntax någonstanns men efter att ha kikat runt lite så löste jag det inte. Jag väntar med det och kommer införa det senare i min app/projekt.
+                              <br></br><br></br>
+                              <b>Berätta om den realtidsfunktionalitet du väljer att integrera i din klient/server applikation.</b><br></br>
+                              Jag kommer troligtvis inte använda det som en chatt, utan mer som en inforuta. Min tanke är att "spelarna" på sidan ska skicka in data till server, som efter funktioner, skickar tillbaka data om
+                              vem som har vunnit. Då tänkte jag att jag använder server till att skicka ut dessa meddelande via websocket. Det kommer kanske finnas en chat, men det viktigaste är att vem som har vunnit etc
+                              visas direkt.
+                          </article>
                       </div>
                       <div class='kmom'>
                           <h4>Kmom05</h4>

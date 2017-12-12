@@ -20,13 +20,15 @@ let name = document.getElementById("name_id");
      *
      * @return {void}
      */
-function outputLog(message) {
+let outputLog = (message) => {
     let now = new Date();
     let timestamp = now.toLocaleTimeString();
 
     output.innerHTML += `${timestamp} ${message}<br>`;
     output.scrollTop = output.scrollHeight;
-}
+
+    return output.innerHTML;
+};
 
 
 
@@ -164,3 +166,8 @@ close.addEventListener("click", (/*event*/) => {
     console.log(websocket);
     outputLog("Prepare to close websocket.");
 });
+
+
+module.exports = {
+    outputLog: outputLog
+};
