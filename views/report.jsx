@@ -100,7 +100,51 @@ class Report extends React.Component {
                       </div>
                       <div class='kmom'>
                           <h4>Kmom05</h4>
-                          <article></article>
+                          <article>
+                                <b>Hur gick det att komma igång med databasen MongoDB?</b><br></br>
+                                Jag tyckte det gick bättre än förväntat. Jag har hanterat JSON objekt tidigare
+                                men inte inom en databas. Det var lite krångligt i början då jag inte förstod
+                                hur jag skulle få terminal raden (som skapar objekten) till att få det till en
+                                funktion.
+                                <br></br><br></br>
+                                <b>Vilken syn har du på databaser inom konceptet NoSQL?</b><br></br>
+                                Jag gillar det starkt. Det känns så mycket smidigare än sql, då de sparas i
+                                tabeller. På det här sättet så känns det som det även finns “kod” i databasen
+                                och inte behövs översätta det till “vanligt format” och tillbaka.
+                                <br></br><br></br>
+                                <b>Reflektera över skillnader och likheter mellan relationsdatabaser och
+                                databaser inom NoSQL.</b><br></br>
+                                En av skillnaderna är att i NoSQL hanterar man objekt, ofta med key och value
+                                värden, medan i “rdb” så hanteras datan i en tabell. En annan skillnad jag
+                                märkte var att man måste inte förbestämma vilka “kolumner” som ska finnas.
+                                Man kan bara slänga in key och value värden utan en tidigare “setup” vilken
+                                man måste göra i en rdb. Där skapar du strukturen innan du börjar lägga in
+                                information.
+                                <br></br><br></br>
+                                <b>Vilka är dina tankar om asynkron programmering med JavaScript?</b><br></br>
+                                Jag tycker det är smart, att den väntar på det som tar tid och att det måste
+                                göras klart innan koden fortsätter. Det negativa är att man måste skriva det
+                                själv och själv säga när det ska vara asynkront. Visst kan det vara bra, men
+                                det hade varit skönt att om något tog längre tid (tex en request från ett
+                                api) så tar den, den tid den behöver.
+                                Overall så gillar jag det!
+                                <br></br><br></br>
+                                <b>Hur känner du för Docker och det sättet vi jobbar med tjänster i
+                                kontainrar?</b><br></br>
+                                Jag röstar på onödigt. Det är ett otroligt bra verktyg och jag förstår meningen
+                                med det. Det var smidigt när jag väl satt upp mongodb och express i
+                                containrar men det var mycket förarbete. Just här hade jag valt att bara starta
+                                dessa två normalt. Jag tycker dock att när det gäller testning så är det otroligt
+                                bra när man kan köra olika node moduler så man vet om koden är bakåt
+                                kompatibel.
+                                <br></br><br></br>
+                                Jag har inte gjort några nya tester, eller implementerar databas i min app.
+                                Detta är för att jag har skapat en struktur men har andra delar i mitt
+                                “projekt” som jag vill göra först. Jag har förstått hur mongodb används
+                                så jag vet hur jag ska implementera det i mitt projekt.
+
+
+                          </article>
                       </div>
                       <div class='kmom'>
                           <h4>Kmom06</h4>
