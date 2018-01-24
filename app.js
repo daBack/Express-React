@@ -2,20 +2,22 @@
  * Module dependencies.
  */
 
-var express = require('express');
-var routes = require('./routes');
-var http = require('http');
-var path = require('path');
-var errorHandler = require('errorhandler');
-var logger = require('morgan');
-var lessExpress = require('less-express');
+const express = require('express');
+const routes = require('./routes');
+const http = require('http');
+const path = require('path');
+const errorHandler = require('errorhandler');
+const logger = require('morgan');
+const lessExpress = require('less-express');
 const WebSocket = require("ws");
 
-// This should refer to the local React and gets installed via `npm install` in
-// the example.
-var reactViews = require('express-react-views');
+const reactViews = require('express-react-views');
 
-var app = express();
+const app = express();
+
+/* HERE IS MONGODB */
+const mongo = require("mongodb").MongoClient;
+const dsn =  process.env.DBWEBB_DSN || "mongodb://localhost:27017/bankerydare";
 
 /* HERE IS WS */
 const server = http.createServer(app);
@@ -125,6 +127,25 @@ app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/report', routes.report);
 app.get('/chat', routes.chat);
+app.get('/mongodb', routes.db);
+
+app.get('/mongodb/find', routes.find);
+app.get('/mongodb/insert/:ob', routes.insert);
+app.get('/mongodb/drop', routes.drop);
+app.get('/mongodb/edit/:uf/:ut', routes.update);
+// Return a JSON object with list of all documents within the collection.
+app.get("/list", async (request, response) => {
+    try {
+        let res = await findInCollection(dsn, "crowd", {}, {}, 0);
+
+        console.log(res);
+        response.json(res);
+    } catch (err) {
+        console.log(err);
+        response.json(err);
+    }
+});
+
 
 // http.createServer(app).listen(app.get('port'), function() {
 //     console.log('Express server listening on port ' + app.get('port'));
@@ -132,4 +153,15 @@ app.get('/chat', routes.chat);
 // Startup server
 server.listen(app.get('port'), () => {
     console.log('Server listening on port ' + app.get('port'));
+    console.log(`DSN is: ${dsn}`);
 });
+
+async function findInCollection(dsn, colName, criteria, projection, limit) {
+    const db  = await mongo.connect(dsn);
+    const col = await db.collection(colName);
+    const res = await col.find(criteria, projection).limit(limit).toArray();
+
+    await db.close();
+
+    return res;
+}

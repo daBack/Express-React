@@ -13,6 +13,7 @@ class Navbar extends React.Component {
               <a class='hvr-shutter-out-vertical' href="/about">About</a>
               <a class='hvr-shutter-out-vertical' href="/report">Report</a>
               <a class='hvr-shutter-out-vertical' href="/chat">Chat</a>
+              <a class='hvr-shutter-out-vertical' href="/mongodb">DB</a>
           </div>
       </nav>
     );

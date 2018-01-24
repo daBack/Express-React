@@ -21,7 +21,8 @@
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "ws": "^3.3.2"
+    "ws": "^3.3.2",
+    "mongodb": "^2.2.34"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "js-yaml": "^3.10.0",
     "jsonlint": "^1.6.2",
     "mocha": "^4.0.1",
+    "mocha-jsdom": "^1.1.0",
     "stylelint": "^8.2.0",
     "uglify-es": "^3.1.7"
   }

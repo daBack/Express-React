@@ -130,7 +130,7 @@ body {
 .outerWrapper {
     .innerWrapper{
         display: flex;
-
+        min-height: 60vh;
     }
 }
 
@@ -202,4 +202,50 @@ footer {
         font-family: @standardFont;
         text-transform: uppercase;
     }
+}
+
+// ========================
+// ========DATABASE=========
+// =======================
+.db-wrapper {
+    margin: 0 auto;
+    background-color: @white;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+
+    .db-show {
+        background-color: @lightContrast;
+        margin-bottom: 10px;
+    }
+
+    input {
+        border:none;
+        background-color:@lightContrast;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        min-height: 30px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .buttons, button {
+        min-height: 30px;
+        background-color: @contrast;
+        flex: 1;
+    }
+
+    .form-inside {
+        display: flex;
+        flex-direction: row;
+
+        input {
+            flex: 1;
+        }
+
+    }
+
 }
