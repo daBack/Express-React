@@ -1,7 +1,7 @@
 "use strict";
 
 const assert = require('assert');
-const client = require('../public/js/client');
+// const client = require('../public/js/client');
 
 
 describe('Testing Express and Jsx', function() {

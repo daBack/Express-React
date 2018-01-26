@@ -40,6 +40,7 @@ exports.find = async (req, res) => {
 exports.insert = async (req, res) => {
     try {
         let object = await req.params.ob;
+
         console.log(object);
         await db.insertInCollection("crowd", object);
     } catch (err) {
@@ -47,17 +48,18 @@ exports.insert = async (req, res) => {
         res.json(err);
         console.log("hehehgehgheg");
     }
-}
+};
 
 exports.drop = async (req, res) => {
     await db.dropCollection("crowd");
     res.send("Dropped table");
-}
+};
 
 exports.update = async (req, res) => {
     try {
         let updateFrom = await req.params.uf;
         let updateTo = await req.params.ut;
+
         console.log(updateFrom);
         console.log(updateTo);
         await db.updateInCollection("crowd", updateFrom, updateTo);
@@ -65,4 +67,4 @@ exports.update = async (req, res) => {
         console.log(err);
         res.json(err);
     }
-}
+};

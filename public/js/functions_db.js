@@ -24,9 +24,8 @@ let findInCollection = async (colName, criteria, projection, limit) => {
     const res = await col.find(criteria, projection).limit(limit).toArray();
 
     await db.close();
-
     return res;
-}
+};
 
 let insertInCollection = async (colName, bObj) => {
     const db  = await mongo.connect(dsn);
@@ -37,7 +36,7 @@ let insertInCollection = async (colName, bObj) => {
     await db.close();
 
     return insertInC;
-}
+};
 
 let updateInCollection = async (colName, oldEntry, newEntry ) => {
     const db  = await mongo.connect(dsn);
@@ -49,7 +48,7 @@ let updateInCollection = async (colName, oldEntry, newEntry ) => {
     await db.close();
 
     return update;
-}
+};
 
 let dropCollection = async (colName) => {
     const db  = await mongo.connect(dsn);
@@ -59,11 +58,11 @@ let dropCollection = async (colName) => {
     await db.close();
 
     return drop;
-}
+};
 
 module.exports = {
-    findInCollection : findInCollection,
-    insertInCollection : insertInCollection,
-    updateInCollection : updateInCollection,
-    dropCollection : dropCollection
+    findInCollection: findInCollection,
+    insertInCollection: insertInCollection,
+    updateInCollection: updateInCollection,
+    dropCollection: dropCollection
 };
